@@ -1,0 +1,44 @@
+{
+	"layer": "layer_speed",
+	"attributes": 
+	[
+		{
+			"name": "speed_m_s"
+		},
+
+		{
+			"name": "geom_sl"
+		}
+	],
+
+	"table": 
+	{
+		"name": "onet_data.services"
+	},
+
+	"join": 
+	[
+		{
+			"name": "onet_data.sentence_line",
+			"column": "id_sequence"
+		}
+	],
+
+	"filters": 
+	[
+		{
+			"table": "otmisnet.machine",
+			"column": "id_machine",
+			"operators": 
+			[
+				{
+					"operator": "IN",
+					"values": 
+					[
+						"1","11"
+					]
+				}
+			]
+		}
+	]
+}
