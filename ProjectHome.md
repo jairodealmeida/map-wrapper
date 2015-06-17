@@ -1,0 +1,1 @@
+Wrapper interface to principal map middleware
